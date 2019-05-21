@@ -1,4 +1,6 @@
 import hikesController from './hikesController.js';
 
-let controller = new hikesController();
-window.addEventListener('load', controller.renderHikeList);
+window.addEventListener('load', () => {
+   const controller = new hikesController();
+   controller.renderHikeList();
+});
