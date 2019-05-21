@@ -10,7 +10,7 @@ export default class hikesController {
    renderHikeList() {
       const hikeListElement = document.getElementById('hikes');
       hikeListElement.innerHTML = '';
-      this.model.hikes.forEach(hike => {
+      this.model.getHikes().forEach(hike => {
          hikeListElement.appendChild(this.view.renderOneHike(hike));
       });
    }
